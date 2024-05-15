@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="en" class="v2023 ">
+    <head>
+    <meta charset="UTF-8">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap" rel="stylesheet">
+<meta name="viewport" content="initial-scale=1, width=device-width">
+       
+    <meta name="description" content="ONION is a highly efficient and secure investment  ">
+   <link rel="stylesheet" href="onion.css">
+   <link rel="script" href="onion.js">
+   <menu> <style>
+    /* CSS styles for the navigation bar */
+    nav {
+        background-color: #333; /* Dark background color */
+        color: #fff; /* Text color */
+        padding: 10px; /* Padding around the links */
+        position: relative; /* Adjust with the page */
+        width: auto; /* Fit to the content */
+        top: 0; /* Stick to the top */
+        left: 0; /* Align to the left */
+        z-index: 1000; /* Ensure it's on top of other content */
+    }
+    nav ul {
+        list-style-type: none; /* Remove bullet points */
+        margin: 0;
+        padding: 0;
+        display: flex; /* Display links horizontally */
+    }
+    nav li {
+        margin-right: 20px; /* Add space between links */
+    }
+    nav a {
+        text-decoration: none; /* Remove underline */
+        color: #fff; /* Text color */
+    }
+    .content {
+        padding-top: 40px; /* Adjust content padding to make space for the navbar */
+    }
+</style>
+
+
+<nav>
+    <ul>
+        <li><a href="#table">Home</a></li>
+        <li><a href="#features">Plans</a></li>
+        <li><a href="#contact">About</a></li>
+        <li><a href="#">Login</a></li>
+        <li><a href="#">Signup</a></li>
+    </ul>
+</nav>
+
+<title> OININ HEDGE FUND</title>
+    <header> OININ</header>
+    <h1> Watch Your Savings Unravel</h1>
+</menu>
+   
+  </head>
+
+<a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+  </a>
+
+
+</div>
+
+   <body>
+    
+<section id="table">
+    <div class="investment-box">
+        <div class="investment-title" style="color: #750553;">Investment Detail</div>
+        <div class="investment-info">
+            <span class="label">Investment Amount:</span>
+            <span class="value">$10,000</span>
+
+        </div>
+        <div class="investment-info">
+            <span class="label">Investment Plan (Plans chosen):</span>
+            <span class="value">Bronze Plan, Silver Plan, Gold, Platinum, Diamond</span>
+        </div>
+        <div class="investment-info">
+            <span class="label">Increase in Percentage:</span>
+            <span class="value">600%</span>
+        </div>
+        
+        <div class="containers">
+            <button class="deposit-button">Deposit</button>
+        </div>
+        <style>
+            body {
+                margin: 0;
+                font-family: Arial, sans-serif;
+            }
+            .containers {
+        display: flex;
+        justify-content: flex-end; /* Aligns items to the right */
+        margin-top: 0px;
+    }
+    .deposit-button {
+        background-color: #4CAF50; /* Green */
+        border: none;
+        color: white;
+        padding: 15px 32px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin: -10px -200px;
+        cursor: pointer;
+        border-radius: 8px;
+    }
+        </style>
+    </div>
+
+</section>
+    <section id="contact">
+            <h2> What We Do</h2>
+        <p1>Investing in any capacity comes with its own levels of pros and cons ,  thats why organisations like ours are created , i know the question that you find yourself asking is how do i trust anyone let alone any organisation with my money, WELL to be completely honest every thing you do is a risk , why not go after a reward. So here at oinin we focus on a data and intuition based investment method.
+
+
+        </p1>
+        </section>
+
+
+        <div class="cnt_icon_num">
+            <i class="icon-traders-online"></i>
+            <div class="value">817+</div>
+            <p>Traders<br>Online</p>
+        </div>
+    
+        <div class="cnt_icon_num">
+            <i class="icon-total-registred"></i>
+            <div class="value">156,789+</div>
+            <p>Total<br>Registered </p>
+        </div>
+    
+        <div class="cnt_icon_num">
+            <i class="icon-best-today"></i>
+            <div class="value">888,909+</div>
+            <p>Deals<br>Today</p>
+        </div>
+</style>
+<section>
+     <div id="wrapper">
+        <h5> Crypto Prices</h5>
+        <table id="cryptoTable">
+            <tr>
+              <th>Name</th>
+              <th>Symbol</th>
+              <th>Price (USD)</th>
+            </tr>
+          </table>
+</section>
+<section id="scrolling-wrapper">
+<h2>Transaction Details</h2>
+
+<div class="scrolling-wrapper">
+    <table id="transactionTable">
+        <tr>
+            <th>Status</th>
+            <th>Amount (USD)</th>
+            <th>Wallet Address</th>
+            
+        </tr>
+    </table>
+</div>
+
+<script>
+    // Transaction data
+    const transactions = [
+        { status: 'confirm', amount: '$10,000.00', address: '3a17c5984af22cd7a443f14457841b3b19a51ea75a30e18bc6a82e4f8732dbca' },
+        { status: 'pending', amount: '$51,000.00', address: '8a2b9781aa4995625af7d2b008f020ac74e7e0d2a599e93ed995f7c3bc2be9f2' },
+        { status: 'confirm', amount: '$24,100.00', address: 'f007e92cc9f82ba9c8c40c481eec7315fa9abcd85e7249a6cb57e38a2cf22d3e' },
+        { status: 'confirm', amount: '$4,000.00', address: '8a2b9781aa4995625af7d2b008f020ac74e7e0d2a599e93ed995f7c3bc2be9f2' },
+        { status: 'pending', amount: '$500', address: '00db85ef40da34f3ea76aa60f0b2053eec2d90121e450791c18d8edbfedde6f1' },
+        { status: 'confirm', amount: '$240,000', address: 'b21a418a44ed8b56118facefe7aa8d26541dff811b8a8ca65cfa1346d62c5c48' },
+        { status: 'pending', amount: '$17,000', address: '1e652d2899a1d058a20041a9faaeb5dc009101ca412ff09c387e6b281bd1db8b' },
+        { status: 'confirm', amount: '$51,000', address: '6a49e66a66f75e72e6bd383ac798792af204a6693708912ad0d48e363a2ab7a7' },
+        { status: 'pending', amount: '$21,000', address: '8a2b9781aa4995625af7d2b008f020ac74e7e0d2a599e93ed995f7c3bc2be9f2' },
+        { status: 'confirm', amount: '$6,000', address: '797ba039291417fdbdb411ea0a102d23090cde9ac7799ff605f40b5db484891d' },
+        { status: 'pending', amount: '$9,000', address: 'f0b66ce7a33bbc63bf50050beaf52be71709c359aa1d344bb90f943690485661' },
+        { status: 'confirm', amount: '$23,000', address: '2083e95ada3c584471ba5982e16c5dc2a6e464d3c170555ea8c708668be9383b' },
+        { status: 'pending', amount: '$5,000', address: '8a2b9781aa4995625af7d2b008f020ac74e7e0d2a599e93ed995f7c3bc2be9f2' },
+        { status: 'confirm', amount: '5,000', address: '15c3a97edbd606bd1e455aa2875677f5c6cd2b804e9054e898f640d313e39781' },
+        { status: 'pending', amount: '$18,000', address: '66c13496e9d53a2402fd49bbe91df298164472679cc868bbfebbabb4844d784c' },
+        { status: 'confirm', amount: '$2,500', address: 'ce972a6b82135fcba0890ea0c8668bdddf782fd580672daa6616c3b1af40ca9f' },
+        { status: 'pending', amount: '$9,000', address: '376e809b02e6ef044f6d5cf5b72111f25f3c3e16a93dce865a178e2e0f5c484c' },
+        { status: 'confirm', amount: '$43,000', address: 'aa14458f8082d9c4265ef491ca0b5d4801c16bbf7a4aece7b70a0b4824ffdfea' }
+    ];
+    
+    // Function to create table rows
+    function createTransactionRows(startIndex) {
+        const table = document.getElementById('transactionTable');
+        table.innerHTML = ''; // Clear existing rows
+        for (let i = startIndex; i < startIndex + 5; i++) {
+            if (i >= transactions.length) {
+                break;
+            }
+            const transaction = transactions[i];
+            const row = `<tr><td>${transaction.amount}</td><td>${transaction.address}</td><td>${transaction.status}</td></tr>`;
+            table.innerHTML += row;
+        }
+    }
+    
+    // Set interval to continuously scroll through transactions
+    let startIndex = 0;
+    const scrollInterval = setInterval(() => {
+        createTransactionRows(startIndex);
+        startIndex = (startIndex + 1) % (transactions.length - 4); // Circular indexing
+    }, 3000); // Adjust the interval as needed (milliseconds)
+    
+    // Initial creation of rows
+    createTransactionRows(startIndex);
+    </script>
+<style>
+    /* CSS for the table */
+    table {
+        width: 100%;
+        border-collapse: collapse;
+        overflow: hidden; /* Hide overflowing content */
+    }
+
+    th, td {
+        border: 1px solid #ddd;
+        padding: 8px;
+        text-align: left;
+    }
+
+    th {
+        background-color: #f2f2f2;
+    }
+
+    /* CSS for the scrolling wrapper */
+    .scrolling-wrapper {
+        overflow-x: scroll; /* Enable horizontal scrolling */
+        white-space: nowrap; /* Prevent line breaks */
+        width: 100%; /* Full width */
+    }
+</style>
+</section>
+
+
+<section id="features">
+    <h3 style="color: white;">INVESTMENT PLAN</h3>
+
+<section id="con1">
+    <h4>Choose Your Preferred Trading Packages</h4>
+    <style>
+        #con1 {
+            text-align: center;
+
+        }
+    </style>
+</section>
+    <ul id="plans">
+        <li id="Bronze">
+            BRONZE $100 - $500
+        </li>
+        <li id="SILVER">
+            SILVER $500 - $1,000 
+        </li>
+        <li id="Gold">
+            GOLD $1,000 - $5,000 
+        </li>
+        <li id="Platinum">
+            Platinum $5000 - $10000 
+        </li>
+        <li id="Diamond">
+            Diamond $10,000 - $50,000 
+        </li>
+
+
+    </ul>
+
+    </div>
+    
+
+</section>
+
+<section id="box">
+    <div class="_side___ _b_side___">
+        <h1 class="_seg____htxt_" style="color: #FFF; background-color: rgba(255, 255, 255, 0.5);">Century International Quality Gold ERA Award</h1>
+        <div class="_txt___" style="font-size: 17px; background-color: rgba(53, 52, 52, 0.5);">The prestigious award was given to OININ investment platform in recognition of our outstanding commitment to Quality and Excellence, particularly in the realm of Customer Satisfaction</div>
+    </div>
+
+    <div class="_seg____ a_seg____ b_none_" style="float: left;">    
+        <div class="_side___ _b_side___">
+            <h1 class="_seg____htxt_" style="color: #FFF; background-color: rgba(255, 255, 255, 0.5);">Most innovative binary option platform</h1>
+            <div class="_txt___" style="font-size: 17px; background-color: rgba(53, 52, 52, 0.5);">As Steve Jobs once said, innovation distinguishes between leaders and followers. Our innovative approach makes our product shine—and the evidence is in this beautiful accolade</div>
+        </div>
+    </div>
+
+    <div class="_seg____ a_seg____ b_none_" style="float: left;">  
+        <div class="_side___ _b_side___">
+            <h1 class="_seg____htxt_" style="color: #FFF; background-color: rgba(255, 255, 255, 0.5);">Most Reliable Binary Options Broker</h1>
+            <div class="_txt___" style="font-size: 17px; background-color: rgba(53, 52, 52, 0.5);">Our first priority is the security of our clients' funds. This was recognized by the experts at MasterForex-V, who awarded OININ investment platform  the title of Most Trusted Binary Options Broker</div>
+        </div>
+    </div>
+
+    <div class="_seg____ a_seg____ b_none_" style="float: left;">   
+        <div class="_side___ _b_side___">
+            <h1 class="_seg____htxt_" style="color: #FFF; background-color: rgba(255, 255, 255, 0.5);">The intelligent trading app for binary options</h1>
+            <div class="_txt___" style="font-size: 17px; background-color: rgba(53, 52, 52, 0.5);">The Mobile Star Awards is the largest annual mobile innovations and software awards program in the world. In 2016, the organization honored the  oinin  trading app as the best in its category, praising its efficiency and impeccable design.</div>
+        </div>
+    </div>
+
+    <div class="_seg____ a_seg____ b_none_" style="float: left;">  
+        <div class="_side___ _b_side___">
+            <h1 class="_seg____htxt_" style="color: #FFF; background-color: rgba(255, 255, 255, 0.5);">World's Leading Binary Options Broker</h1>
+            <div class="_txt___" style="font-size: 17px; background-color: rgba(53, 52, 52, 0.5);">At the same MasterForex-V profitprime was awarded for being the World's Leading Binary Options Broker. The perfection in our service and product was recognized by the experts of the conference in 2014.</div>
+        </div>
+    </div>
+
+    <div class="_seg____ a_seg____ b_none_" style="float: left;">
+        <div class="_side___ _b_side___">
+            <h1 class="_seg____htxt_" style="color: #FFF; background-color: rgba(255, 255, 255, 0.5);">Fastest growing binary option brand</h1>
+            <div class="_txt___" style="font-size: 17px; background-color: rgba(53, 52, 52, 0.5);">Global Brands Magazine, Britain’s reputable brand observer, awarded  oinin  along with a number of outstanding European brands — an achievement worth working for.</div>
+        </div>
+    </div>
+
+
+</section>
+
+<h2 class="_seg____header__" style="margin-top: 50px; color: #000;">-<u>OUR PLATFORM ADVANTAGES</u>-</h2>
+<div class="feature-box">
+    <section>
+        <div class="_seg____ b_none_">
+            <img class="_seg___img _simg_" src='payment.png'>
+            <div class="_side___">
+                <h1 class="_seg____htxt_">Payment Options</h1>
+                <div class="_txt___">We provide various withdrawal methods</div>
+            </div>
+        </div>
+        
+        <div class="_seg____ b_none_">
+            <img class="_seg___img _simg_" src="security.png">
+            <div class="_side___">
+                <h1 class="_seg____htxt_">Strong Security</h1>
+                <div class="_txt___">With advanced security systems, we keep your account always protected</div>
+            </div>
+        </div>
+
+        <div class="_seg____ b_none_">
+            <img class="_seg___img _simg_" src="world.png">
+            <div class="_side___">
+                <h1 class="_seg____htxt_">World Coverage</h1>
+                <div class="_txt___">Our platform is used by bitcoin investors worldwide</div>
+            </div>
+        </div>
+
+        <div class="_seg____ b_none_">
+            <img class="_seg___img _simg_" src="team.png">
+            <div class="_side___">
+                <h1 class="_seg____htxt_">Experienced Team</h1>
+                <div class="_txt___">Our experienced team helps us build the best product and deliver first class service to our clients</div>
+            </div>
+        </div>
+
+
+        <div class="_seg____ b_none_">
+            <img class="_seg___img _simg_" src="platform.png">
+            <div class="_side___">
+                <h1 class="_seg____htxt_">Cross-Platform Trading</h1>
+                <div class="_txt___">Our platform can be accessed from various devices such as Phones, Tablets &amp; Pc</div>
+            </div>
+        </div>
+
+        <div class="_seg____ b_none_">
+            <img class="_seg___img _simg_" src="support.png">
+            <div class="_side___">
+                <h1 class="_seg____htxt_">Expert Support</h1>
+                <div class="_txt___">Our 24/7 support allows us to keep in touch with customers in all time zones and regions</div>
+            </div>
+        </div>
+
+        <div class="_seg____ b_none_">
+            <img class="_seg___img _simg_" src="exchange.png">
+            <div class="_side___">
+                <h1 class="_seg____htxt_">Instant Exchange</h1>
+                <div class="_txt___">Change your world today and make yourself a great tomorrow, invest with the little money you have and make a great profit at the end</div>
+            </div>
+        </div>
+    </section>
+</div>
+   </body>
+
+<section id="logs">
+    <h3>Join Us Today</h3>
+
+    <div class="container">
+      <h7>Signup</h7>
+      <form action="onion signup.html" method="post">
+        <input type="email" name="email" placeholder="Email" required>
+        <input type="password" name="password" placeholder="Password" required>
+        <input type="submit" value="Signup">
+      </form>
+      
+      <h7>Or</h7>
+      
+      <h8>Login</h8>
+      <form action="onion signup.html" method="post">
+        <input type="email" name="email" placeholder="Email" required>
+        <input type="password" name="password" placeholder="Password" required>
+        <input type="submit" value="Login">
+      </form>
+      
+      <button class="google-btn">Signup/Login with Google</button>
+    
+</div>
+
+
+
+</section>
+
+
+
+
+
+
+
+
+
+    
+<script>
+    // Function to fetch cryptocurrency prices from CoinGecko API
+    function fetchCryptoPrices() {
+        fetch('https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd')
+            .then(response => response.json())
+            .then(data => {
+                const cryptoTable = document.getElementById('cryptoTable');
+                cryptoTable.innerHTML = '<tr><th>Name</th><th>Symbol</th><th>Price (USD)</th></tr>';
+                
+                const symbolsToShow = ['btc', 'eth', 'usdt', 'bnb', 'usd']; // Symbols to display
+
+                data.filter(crypto => symbolsToShow.includes(crypto.symbol.toLowerCase())).forEach(crypto => {
+                    const row = `<tr><td>${crypto.name}</td><td>${crypto.symbol.toUpperCase()}</td><td>${crypto.current_price}</td></tr>`;
+                    cryptoTable.innerHTML += row;
+                });
+            })
+            .catch(error => console.error('Error fetching cryptocurrency prices:', error));
+    }
+
+    // Fetch cryptocurrency prices initially
+    fetchCryptoPrices();
+
+    // Set interval to update cryptocurrency prices every 5 minutes (300,000 milliseconds)
+    setInterval(fetchCryptoPrices, 300000);
+</script>
+
+<script>
+function myFunction() {
+    var x = document.getElementById("myLinks");
+    if (x.style.display === "block") {
+      x.style.display = "none";
+    } else {
+      x.style.display = "block";
+    }
+}</script>
+
+
+
+
+
+</main>
+
+<footer class="welcome-page--footer px4">
+<div class="row middle-xs center-xs my4">
+    <div class="hf__company-box col-xs-12 col-md-6 start-md">
+        <p class="text-14 opacity-03 font-weight--700 px3">This proprietery service is provided © ONION 2024</p>
+    </div>
+    
+    </div>
+</footer>
+
+
+
+</html>
